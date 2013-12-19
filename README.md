@@ -1,9 +1,9 @@
 file-conversion
 ===============
 
-## tab-to-csv.py
+### tab-to-csv.py
 
-### Usage
+#### Usage
 
 ```
 python tab-to-csv.py --input <tab-delimited-filename> --output <destination-csv-filename>
