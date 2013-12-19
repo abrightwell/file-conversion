@@ -10,10 +10,9 @@ if __name__=="__main__":
 
 	with open(options.input, 'rb') as tab_delim_file:
 		tab_file = csv.reader(tab_delim_file, delimiter="\t")
-		file_contents = filecontents = [line for line in tab_file]
+		file_contents = [line for line in tab_file]
 
 	# write comma-delimited file (comma is the default delimiter)
 	with open(options.output,'wb') as comma_delim_file:
-    		csv_file = csv.writer(comma_delim_file, quotechar='', quoting=csv.QUOTE_NONE)
-    		csv_file.writerows(file_contents)
-		
+		csv_file = csv.writer(comma_delim_file, quotechar='', quoting=csv.QUOTE_NONE)
+		csv_file.writerows(file_contents)
